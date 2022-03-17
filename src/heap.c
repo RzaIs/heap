@@ -14,8 +14,7 @@ int ensureExtraCapacity(Heap *pHeap) {
     pHeap->nCapacity += CAPACITY_PORTION;
     pHeap->pArray = realloc(pHeap->pArray, pHeap->nCapacity * sizeof(int));
     if (pHeap->pArray == NULL) return 2;
-  }
-  return 0;
+  } return 0;
 }
 
 int peek(Heap *pHeap) {
